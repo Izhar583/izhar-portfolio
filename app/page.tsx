@@ -12,7 +12,7 @@ export default function Home() {
 
       {/* NAV */}
       <nav>
-        <a href="#hero" className="logo">IH<span>.</span></a>
+        <a href="#hero" className="logo">IZHAR<span>.</span></a>
         <ul className="nav-links">
           <li><a href="#about">about</a></li>
           <li><a href="#skills">skills</a></li>
