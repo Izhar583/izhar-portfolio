@@ -55,8 +55,13 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.2rem 
 .btn-ghost { border: 1px solid rgba(255,255,255,0.2); color: var(--text); padding: 0.8rem 2rem; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.25s; cursor: none; }
 .btn-ghost:hover { border-color: var(--lime); color: var(--lime); }
 .socials { display: flex; gap: 1.2rem; }
-.social-link { width: 42px; height: 42px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--muted); text-decoration: none; font-size: 1.1rem; transition: all 0.25s; cursor: none; }
-.social-link:hover { border-color: var(--lime); color: var(--lime); box-shadow: var(--glow-lime); }
+.social-link { width: 42px; height: 42px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--muted); text-decoration: none; font-size: 1.1rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); cursor: none; }
+.social-link:hover { transform: translateY(-3px); }
+.social-link[title="GitHub"]:hover { background-color: #ffffff; border-color: #ffffff; color: #000000; box-shadow: 0 4px 15px rgba(255,255,255,0.3); }
+.social-link[title="LinkedIn"]:hover { background-color: #0A66C2; border-color: #0A66C2; color: #ffffff; box-shadow: 0 4px 15px rgba(10,102,194,0.4); }
+.social-link[title="Email"]:hover { background-color: #EA4335; border-color: #EA4335; color: #ffffff; box-shadow: 0 4px 15px rgba(234,67,53,0.4); }
+.social-link[title="Facebook"]:hover { background-color: #1877F2; border-color: #1877F2; color: #ffffff; box-shadow: 0 4px 15px rgba(24,119,242,0.4); }
+.social-link[title="Instagram"]:hover { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-color: transparent; color: #ffffff; box-shadow: 0 4px 15px rgba(225,48,108,0.4); }
 .hero-canvas-wrap { position: absolute; right: 0; top: 0; width: 45%; height: 100%; pointer-events: none; }
 #hero-canvas { width: 100%; height: 100%; }
 
