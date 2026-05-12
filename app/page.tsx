@@ -102,10 +102,10 @@ export default function Home() {
           <h2 className="section-h2">What I Work With</h2>
           <div className="skills-grid">
             {[
-              { icon: '⚡', title: 'Web Development', tags: ['React.js', 'Next.js', 'Node.js', 'JavaScript ES6+', 'HTML5', 'CSS3', 'WordPress'] },
-              { icon: '📈', title: 'SEO & Marketing', tags: ['On-Page SEO', 'Technical SEO', 'Link Building', 'Keyword Research', 'Off-Page SEO'] },
-              { icon: '🔍', title: 'SEO Tools', tags: ['Search Console', 'Google Analytics', 'SEMrush', 'Ahrefs', 'Screaming Frog'] },
-              { icon: '💻', title: 'Programming', tags: ['JavaScript', 'TypeScript', 'Python'] },
+              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>, title: 'Web Development', tags: ['React.js', 'Next.js', 'Node.js', 'JavaScript ES6+', 'HTML5', 'CSS3', 'WordPress'] },
+              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>, title: 'SEO & Marketing', tags: ['On-Page SEO', 'Technical SEO', 'Link Building', 'Keyword Research', 'Off-Page SEO'] },
+              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>, title: 'SEO Tools', tags: ['Search Console', 'Google Analytics', 'SEMrush', 'Ahrefs', 'Screaming Frog'] },
+              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>, title: 'Programming', tags: ['JavaScript', 'TypeScript', 'Python'] },
             ].map(s => (
               <div key={s.title} className="skill-card">
                 <div className="skill-icon">{s.icon}</div>
