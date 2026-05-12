@@ -37,7 +37,7 @@ export default function Home() {
             Hi, I&apos;m<br />
             <span className="gradient-text">Izhar Ul Haq</span>
           </h1>
-          <p className="hero-sub">Building performant web apps &amp; search-optimized digital experiences from Lahore, Pakistan.</p>
+          <p className="hero-sub">I make websites fast and make sure Google finds them. BS Software Engineering student — 3 roles, 1 company, 6 months.</p>
           <div className="hero-btns">
             <a href="#projects" className="btn-primary">View My Work →</a>
             <a href="#contact" className="btn-ghost">Get In Touch</a>
@@ -202,8 +202,11 @@ export default function Home() {
                   <div className="project-desc">{p.desc}</div>
                   <div className="project-tech">{p.tech.map(t => <span key={t} className="tag">{t}</span>)}</div>
                   <div className="project-links">
-                    <a href={p.github} target="_blank" rel="noopener noreferrer" className="project-link">GitHub ↗</a>
-                    {/* Live links hidden until deployment */}
+                    {p.github && p.github !== '#' ? (
+                      <a href={p.github} target="_blank" rel="noopener noreferrer" className="project-link">GitHub ↗</a>
+                    ) : (
+                      <span className="project-link" style={{ opacity: 0.4, cursor: 'not-allowed', pointerEvents: 'none' }}>Coming Soon</span>
+                    )}
                   </div>
                 </div>
               </div>
