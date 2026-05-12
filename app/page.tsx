@@ -114,9 +114,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <p style={{ marginTop: '2rem', textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-dim)' }}>
-            *Also familiar with Cybersecurity (SIEM, Threat Analysis) and Deep Learning fundamentals.
-          </p>
         </div>
       </section>
 
