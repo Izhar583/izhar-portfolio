@@ -105,9 +105,7 @@ export default function Home() {
               { icon: '⚡', title: 'Web Development', tags: ['React.js', 'Next.js', 'Node.js', 'JavaScript ES6+', 'HTML5', 'CSS3', 'WordPress'] },
               { icon: '📈', title: 'SEO & Marketing', tags: ['On-Page SEO', 'Technical SEO', 'Link Building', 'Keyword Research', 'Off-Page SEO'] },
               { icon: '🔍', title: 'SEO Tools', tags: ['Search Console', 'Google Analytics', 'SEMrush', 'Ahrefs', 'Screaming Frog'] },
-              { icon: '💻', title: 'Programming', tags: ['JavaScript', 'Python'] },
-              { icon: '🛡️', title: 'Cybersecurity', tags: ['SIEM', 'Threat Analysis', 'Vulnerability Assessment'] },
-              { icon: '🧠', title: 'Deep Learning', tags: ['Python ML', 'DL Frameworks', 'Foundational'] },
+              { icon: '💻', title: 'Programming', tags: ['JavaScript', 'TypeScript', 'Python'] },
             ].map(s => (
               <div key={s.title} className="skill-card">
                 <div className="skill-icon">{s.icon}</div>
@@ -116,6 +114,9 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <p style={{ marginTop: '2rem', textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-dim)' }}>
+            *Also familiar with Cybersecurity (SIEM, Threat Analysis) and Deep Learning fundamentals.
+          </p>
         </div>
       </section>
 
@@ -126,54 +127,59 @@ export default function Home() {
           <p className="section-label">// work experience</p>
           <h2 className="section-h2">Where I&apos;ve Worked</h2>
           <div className="timeline">
-            {[
-              {
-                role: 'Front-End Web Developer Intern', date: 'Dec 2025 – Present',
-                company: 'IT Kumail – ITK Online Solutions · Lahore, Pakistan',
-                bullets: [
-                  'Developing and maintaining web pages using React.js and Next.js with focus on performance and responsiveness',
-                  'Collaborating with the development team to build scalable front-end components and user interfaces',
-                  'Integrating back-end APIs with front-end interfaces using Node.js',
-                  'Applying SEO best practices during web development to ensure search-engine-friendly output',
-                ],
-              },
-              {
-                role: 'Junior SEO Executive', date: 'Oct 2025 – Dec 2025',
-                company: 'IT Kumail – ITK Online Solutions · Lahore, Pakistan',
-                bullets: [
-                  'Executed on-page SEO: meta tag optimization, content optimization, internal linking',
-                  'Technical SEO: site audits and resolving crawl issues using Screaming Frog',
-                  'Conducted keyword research and performance tracking using SEMrush and Ahrefs',
-                  'Analyzed website data through Google Search Console and Google Analytics',
-                ],
-              },
-              {
-                role: 'Link Builder', date: 'Jul 2025 – Oct 2025',
-                company: 'IT Kumail – ITK Online Solutions · Lahore, Pakistan',
-                bullets: [
-                  'Executed outreach strategies to acquire high-quality backlinks from authoritative domains',
-                  'Performed off-page SEO activities to improve domain authority and organic search rankings',
-                ],
-              },
-              {
-                role: 'Cyber Security Analyst', date: 'Jul 2025 – Dec 2025',
-                company: 'DevelopersHub Corporation · Islamabad, Pakistan',
-                bullets: [
-                  'Monitored and analyzed security events using SIEM tools to detect potential threats',
-                  'Conducted vulnerability assessments and identified cybersecurity risks across systems',
-                  'Prepared security reports and documented threat landscape findings for team review',
-                ],
-              },
-            ].map(exp => (
-              <div key={exp.role} className="exp-entry">
-                <div className="exp-header">
-                  <span className="exp-role">{exp.role}</span>
-                  <span className="exp-date">{exp.date}</span>
-                </div>
-                <div className="exp-company">{exp.company}</div>
-                <ul className="exp-bullets">{exp.bullets.map(b => <li key={b}>{b}</li>)}</ul>
+            <div className="exp-entry">
+              <div className="exp-company" style={{ fontSize: '1.25rem', color: 'var(--cyan)', marginBottom: '1rem' }}>
+                IT Kumail – ITK Online Solutions · Lahore, Pakistan
               </div>
-            ))}
+              
+              <div className="exp-role-group" style={{ marginBottom: '1.5rem', borderLeft: '2px solid var(--border)', paddingLeft: '1.5rem', marginLeft: '0.5rem' }}>
+                <div className="exp-header" style={{ marginBottom: '0.5rem' }}>
+                  <span className="exp-role" style={{ fontSize: '1.1rem' }}>Front-End Web Developer Intern</span>
+                  <span className="exp-date">Dec 2025 – Present</span>
+                </div>
+                <ul className="exp-bullets">
+                  <li>Developing and maintaining web pages using React.js and Next.js with focus on performance and responsiveness</li>
+                  <li>Collaborating with the development team to build scalable front-end components and user interfaces</li>
+                  <li>Integrating back-end APIs with front-end interfaces using Node.js</li>
+                  <li>Applying SEO best practices during web development to ensure search-engine-friendly output</li>
+                </ul>
+                
+                <div className="exp-header" style={{ marginBottom: '0.5rem', marginTop: '1.5rem' }}>
+                  <span className="exp-role" style={{ fontSize: '1.1rem' }}>Junior SEO Executive</span>
+                  <span className="exp-date">Oct 2025 – Dec 2025</span>
+                </div>
+                <ul className="exp-bullets">
+                  <li>Executed on-page SEO: meta tag optimization, content optimization, internal linking</li>
+                  <li>Technical SEO: site audits and resolving crawl issues using Screaming Frog</li>
+                  <li>Conducted keyword research and performance tracking using SEMrush and Ahrefs</li>
+                  <li>Analyzed website data through Google Search Console and Google Analytics</li>
+                </ul>
+
+                <div className="exp-header" style={{ marginBottom: '0.5rem', marginTop: '1.5rem' }}>
+                  <span className="exp-role" style={{ fontSize: '1.1rem' }}>Link Builder</span>
+                  <span className="exp-date">Jul 2025 – Oct 2025</span>
+                </div>
+                <ul className="exp-bullets">
+                  <li>Executed outreach strategies to acquire high-quality backlinks from authoritative domains</li>
+                  <li>Performed off-page SEO activities to improve domain authority and organic search rankings</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="exp-entry">
+              <div className="exp-company" style={{ fontSize: '1.25rem', color: 'var(--cyan)', marginBottom: '0.5rem' }}>
+                DevelopersHub Corporation · Islamabad, Pakistan
+              </div>
+              <div className="exp-header">
+                <span className="exp-role">Cyber Security Analyst</span>
+                <span className="exp-date">Jul 2025 – Dec 2025</span>
+              </div>
+              <ul className="exp-bullets">
+                <li>Monitored and analyzed security events using SIEM tools to detect potential threats</li>
+                <li>Conducted vulnerability assessments and identified cybersecurity risks across systems</li>
+                <li>Prepared security reports and documented threat landscape findings for team review</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -186,9 +192,9 @@ export default function Home() {
           <h2 className="section-h2">Things I&apos;ve Built</h2>
           <div className="projects-grid">
             {[
-              { emoji: '📊', bg: 'p1', title: 'SEO Dashboard', desc: 'Real-time SEO metrics dashboard with keyword tracking, traffic analytics, and site audit reports built with Next.js.', tech: ['Next.js', 'TailwindCSS', 'Recharts', 'GA API'] },
-              { emoji: '🌐', bg: 'p2', title: 'Portfolio CMS', desc: 'Custom WordPress theme with built-in on-page and technical SEO optimization — structured data, schema markup, and more.', tech: ['WordPress', 'PHP', 'On-Page SEO'] },
-              { emoji: '🛡️', bg: 'p3', title: 'Threat Monitor', desc: 'Security event logger and visualizer with SIEM integration — maps threat activity across systems with real-time alerting.', tech: ['Python', 'SIEM', 'D3.js'] },
+              { emoji: '📊', bg: 'p1', title: 'SEO Dashboard', desc: 'Real-time SEO metrics dashboard with keyword tracking, traffic analytics, and site audit reports built with Next.js.', tech: ['Next.js', 'TailwindCSS', 'Recharts', 'GA API'], github: 'https://github.com/Izhar583/tothewebpro' },
+              { emoji: '🌐', bg: 'p2', title: 'Portfolio CMS', desc: 'Custom WordPress theme with built-in on-page and technical SEO optimization — structured data, schema markup, and more.', tech: ['WordPress', 'PHP', 'On-Page SEO'], github: 'https://github.com/Izhar583' },
+              { emoji: '🛡️', bg: 'p3', title: 'Threat Monitor', desc: 'Security event logger and visualizer with SIEM integration — maps threat activity across systems with real-time alerting.', tech: ['Python', 'SIEM', 'D3.js'], github: 'https://github.com/Izhar583' },
             ].map(p => (
               <div key={p.title} className="project-card">
                 <div className={`project-img ${p.bg}`}>{p.emoji}</div>
@@ -197,8 +203,8 @@ export default function Home() {
                   <div className="project-desc">{p.desc}</div>
                   <div className="project-tech">{p.tech.map(t => <span key={t} className="tag">{t}</span>)}</div>
                   <div className="project-links">
-                    <a href="#" className="project-link">GitHub ↗</a>
-                    <a href="#" className="project-link">Live ↗</a>
+                    <a href={p.github} target="_blank" rel="noopener noreferrer" className="project-link">GitHub ↗</a>
+                    {/* Live links hidden until deployment */}
                   </div>
                 </div>
               </div>
