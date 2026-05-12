@@ -37,7 +37,7 @@ export default function Home() {
             Hi, I&apos;m<br />
             <span className="gradient-text">Izhar Ul Haq</span>
           </h1>
-          <p className="hero-sub">I make websites fast and make sure Google finds them. BS Software Engineering student — 3 roles, 1 company, 6 months.</p>
+          <p className="hero-sub">Building performant web apps &amp; search-optimized digital experiences from Lahore, Pakistan.</p>
           <div className="hero-btns">
             <a href="#projects" className="btn-primary">View My Work →</a>
             <a href="#contact" className="btn-ghost">Get In Touch</a>
@@ -52,7 +52,12 @@ export default function Home() {
             <a href="mailto:izharjoiya0@gmail.com" className="social-link" title="Email">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-10 7L2 7" /></svg>
             </a>
-
+            <a href="https://www.facebook.com/share/1Gt29MvsZF/" className="social-link" title="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/izha_rjoiya?igsh=MWs3cDBjbjQwczJxaA==" className="social-link" title="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
           </div>
         </div>
         <div className="hero-canvas-wrap">
@@ -109,7 +114,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <p style={{ marginTop: '1.5rem', fontSize: '0.8rem', color: 'var(--muted)', fontStyle: 'italic' }}>Also familiar with: Cybersecurity fundamentals, SIEM tools</p>
         </div>
       </section>
 
@@ -121,57 +125,50 @@ export default function Home() {
           <h2 className="section-h2">Where I&apos;ve Worked</h2>
           <div className="timeline">
             <div className="exp-entry">
-              <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.72rem', color: 'var(--lime)', background: 'var(--lime-dim)', border: '0.5px solid var(--border-glow)', padding: '0.25rem 0.8rem', display: 'inline-block', marginBottom: '0.8rem', letterSpacing: '0.08em' }}>↑ Promoted through 3 roles in 6 months</p>
-              <div className="exp-company" style={{ fontSize: '1.1rem', color: 'var(--cyan)', marginBottom: '1rem' }}>
-                IT Kumail – ITK Online Solutions · Lahore, Pakistan &nbsp;<span style={{ fontSize: '0.75rem', color: 'var(--muted)' }}>Jul 2025 – Present</span>
+              <div className="exp-company" style={{ fontSize: '1.25rem', color: 'var(--cyan)', marginBottom: '1rem' }}>
+                IT Kumail – ITK Online Solutions · Lahore, Pakistan
               </div>
-              <div style={{ borderLeft: '2px solid var(--border)', paddingLeft: '1.5rem', marginLeft: '0.5rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                <div>
-                  <div className="exp-header" style={{ marginBottom: '0.5rem' }}>
-                    <span className="exp-role">1 · Link Builder</span>
-                    <span className="exp-date">Jul 2025 – Oct 2025</span>
-                  </div>
-                  <ul className="exp-bullets">
-                    <li>Executed outreach strategies to acquire high-quality backlinks from authoritative domains</li>
-                    <li>Performed off-page SEO activities to improve domain authority and organic search rankings</li>
-                  </ul>
+              
+              <div className="exp-role-group" style={{ marginBottom: '1.5rem', borderLeft: '2px solid var(--border)', paddingLeft: '1.5rem', marginLeft: '0.5rem' }}>
+                <div className="exp-header" style={{ marginBottom: '0.5rem' }}>
+                  <span className="exp-role" style={{ fontSize: '1.1rem' }}>Front-End Web Developer Intern</span>
+                  <span className="exp-date">Dec 2025 – Present</span>
                 </div>
-                <div>
-                  <div className="exp-header" style={{ marginBottom: '0.5rem' }}>
-                    <span className="exp-role">2 · Junior SEO Executive</span>
-                    <span className="exp-date">Oct 2025 – Dec 2025</span>
-                  </div>
-                  <ul className="exp-bullets">
-                    <li>Executed on-page SEO: meta tag optimization, content optimization, internal linking</li>
-                    <li>Technical SEO: site audits and resolving crawl issues using Screaming Frog</li>
-                    <li>Conducted keyword research and performance tracking using SEMrush and Ahrefs</li>
-                    <li>Analyzed website data through Google Search Console and Google Analytics</li>
-                  </ul>
+                <ul className="exp-bullets">
+                  <li>Developing and maintaining web pages using React.js and Next.js with focus on performance and responsiveness</li>
+                  <li>Collaborating with the development team to build scalable front-end components and user interfaces</li>
+                  <li>Integrating back-end APIs with front-end interfaces using Node.js</li>
+                  <li>Applying SEO best practices during web development to ensure search-engine-friendly output</li>
+                </ul>
+                
+                <div className="exp-header" style={{ marginBottom: '0.5rem', marginTop: '1.5rem' }}>
+                  <span className="exp-role" style={{ fontSize: '1.1rem' }}>Junior SEO Executive</span>
+                  <span className="exp-date">Oct 2025 – Dec 2025</span>
                 </div>
-                <div>
-                  <div className="exp-header" style={{ marginBottom: '0.5rem' }}>
-                    <span className="exp-role">3 · Front-End Web Developer Intern</span>
-                    <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                      <span className="exp-date">Dec 2025 – Present</span>
-                      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.65rem', color: '#22c55e', background: 'rgba(34,197,94,0.08)', border: '0.5px solid rgba(34,197,94,0.3)', padding: '0.15rem 0.5rem' }}>Current</span>
-                    </span>
-                  </div>
-                  <ul className="exp-bullets">
-                    <li>Developing and maintaining web pages using React.js and Next.js with focus on performance and responsiveness</li>
-                    <li>Collaborating with the development team to build scalable front-end components and user interfaces</li>
-                    <li>Integrating back-end APIs with front-end interfaces using Node.js</li>
-                    <li>Applying SEO best practices during web development to ensure search-engine-friendly output</li>
-                  </ul>
+                <ul className="exp-bullets">
+                  <li>Executed on-page SEO: meta tag optimization, content optimization, internal linking</li>
+                  <li>Technical SEO: site audits and resolving crawl issues using Screaming Frog</li>
+                  <li>Conducted keyword research and performance tracking using SEMrush and Ahrefs</li>
+                  <li>Analyzed website data through Google Search Console and Google Analytics</li>
+                </ul>
+
+                <div className="exp-header" style={{ marginBottom: '0.5rem', marginTop: '1.5rem' }}>
+                  <span className="exp-role" style={{ fontSize: '1.1rem' }}>Link Builder</span>
+                  <span className="exp-date">Jul 2025 – Oct 2025</span>
                 </div>
+                <ul className="exp-bullets">
+                  <li>Executed outreach strategies to acquire high-quality backlinks from authoritative domains</li>
+                  <li>Performed off-page SEO activities to improve domain authority and organic search rankings</li>
+                </ul>
               </div>
             </div>
 
-            <div className="exp-entry" style={{ opacity: 0.7 }}>
-              <div style={{ fontSize: '0.82rem', color: 'var(--muted)', marginBottom: '0.3rem', fontFamily: "'JetBrains Mono', monospace" }}>
+            <div className="exp-entry">
+              <div className="exp-company" style={{ fontSize: '1.25rem', color: 'var(--cyan)', marginBottom: '0.5rem' }}>
                 DevelopersHub Corporation · Islamabad, Pakistan
               </div>
               <div className="exp-header">
-                <span className="exp-role" style={{ fontSize: '0.95rem', fontWeight: 600 }}>Cyber Security Analyst</span>
+                <span className="exp-role">Cyber Security Analyst</span>
                 <span className="exp-date">Jul 2025 – Dec 2025</span>
               </div>
               <ul className="exp-bullets">
@@ -193,8 +190,8 @@ export default function Home() {
           <div className="projects-grid">
             {[
               { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>, bg: 'p1', title: 'SEO Dashboard', desc: 'Real-time SEO metrics dashboard with keyword tracking, traffic analytics, and site audit reports built with Next.js.', tech: ['Next.js', 'TailwindCSS', 'Recharts', 'GA API'], github: 'https://github.com/Izhar583/tothewebpro' },
-              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>, bg: 'p2', title: 'Portfolio CMS', desc: 'Custom WordPress theme with built-in on-page and technical SEO optimization — structured data, schema markup, and more.', tech: ['WordPress', 'PHP', 'On-Page SEO'], github: null },
-              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>, bg: 'p3', title: 'Threat Monitor', desc: 'Security event logger and visualizer with SIEM integration — maps threat activity across systems with real-time alerting.', tech: ['Python', 'SIEM', 'D3.js'], github: null },
+              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>, bg: 'p2', title: 'Portfolio CMS', desc: 'Custom WordPress theme with built-in on-page and technical SEO optimization — structured data, schema markup, and more.', tech: ['WordPress', 'PHP', 'On-Page SEO'], github: 'https://github.com/Izhar583' },
+              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>, bg: 'p3', title: 'Threat Monitor', desc: 'Security event logger and visualizer with SIEM integration — maps threat activity across systems with real-time alerting.', tech: ['Python', 'SIEM', 'D3.js'], github: 'https://github.com/Izhar583' },
             ].map(p => (
               <div key={p.title} className="project-card">
                 <div className={`project-img ${p.bg}`}>
@@ -205,10 +202,8 @@ export default function Home() {
                   <div className="project-desc">{p.desc}</div>
                   <div className="project-tech">{p.tech.map(t => <span key={t} className="tag">{t}</span>)}</div>
                   <div className="project-links">
-                    {p.github
-                      ? <a href={p.github} target="_blank" rel="noopener noreferrer" className="project-link">GitHub ↗</a>
-                      : <span className="project-link" style={{ opacity: 0.4, cursor: 'not-allowed', pointerEvents: 'none' }}>Coming Soon</span>
-                    }
+                    <a href={p.github} target="_blank" rel="noopener noreferrer" className="project-link">GitHub ↗</a>
+                    {/* Live links hidden until deployment */}
                   </div>
                 </div>
               </div>
