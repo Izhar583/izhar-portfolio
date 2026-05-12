@@ -189,12 +189,14 @@ export default function Home() {
           <h2 className="section-h2">Things I&apos;ve Built</h2>
           <div className="projects-grid">
             {[
-              { emoji: '📊', bg: 'p1', title: 'SEO Dashboard', desc: 'Real-time SEO metrics dashboard with keyword tracking, traffic analytics, and site audit reports built with Next.js.', tech: ['Next.js', 'TailwindCSS', 'Recharts', 'GA API'], github: 'https://github.com/Izhar583/tothewebpro' },
-              { emoji: '🌐', bg: 'p2', title: 'Portfolio CMS', desc: 'Custom WordPress theme with built-in on-page and technical SEO optimization — structured data, schema markup, and more.', tech: ['WordPress', 'PHP', 'On-Page SEO'], github: 'https://github.com/Izhar583' },
-              { emoji: '🛡️', bg: 'p3', title: 'Threat Monitor', desc: 'Security event logger and visualizer with SIEM integration — maps threat activity across systems with real-time alerting.', tech: ['Python', 'SIEM', 'D3.js'], github: 'https://github.com/Izhar583' },
+              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>, bg: 'p1', title: 'SEO Dashboard', desc: 'Real-time SEO metrics dashboard with keyword tracking, traffic analytics, and site audit reports built with Next.js.', tech: ['Next.js', 'TailwindCSS', 'Recharts', 'GA API'], github: 'https://github.com/Izhar583/tothewebpro' },
+              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>, bg: 'p2', title: 'Portfolio CMS', desc: 'Custom WordPress theme with built-in on-page and technical SEO optimization — structured data, schema markup, and more.', tech: ['WordPress', 'PHP', 'On-Page SEO'], github: 'https://github.com/Izhar583' },
+              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>, bg: 'p3', title: 'Threat Monitor', desc: 'Security event logger and visualizer with SIEM integration — maps threat activity across systems with real-time alerting.', tech: ['Python', 'SIEM', 'D3.js'], github: 'https://github.com/Izhar583' },
             ].map(p => (
               <div key={p.title} className="project-card">
-                <div className={`project-img ${p.bg}`}>{p.emoji}</div>
+                <div className={`project-img ${p.bg}`}>
+                  <div className="icon-3d-wrap">{p.icon}</div>
+                </div>
                 <div className="project-body">
                   <div className="project-title">{p.title}</div>
                   <div className="project-desc">{p.desc}</div>
@@ -218,9 +220,9 @@ export default function Home() {
           <h2 className="section-h2">Credentials</h2>
           <div className="certs-grid">
             {[
-              { icon: '🔐', name: 'Career Essentials in Cybersecurity', issuer: 'Microsoft & LinkedIn Learning' },
-              { icon: '🌐', name: 'The Cybersecurity Threat Landscape', issuer: 'LinkedIn Learning' },
-              { icon: '🛡️', name: 'Introduction to Cybersecurity', issuer: 'LinkedIn Learning' },
+              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>, name: 'Career Essentials in Cybersecurity', issuer: 'Microsoft & LinkedIn Learning' },
+              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>, name: 'The Cybersecurity Threat Landscape', issuer: 'LinkedIn Learning' },
+              { icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>, name: 'Introduction to Cybersecurity', issuer: 'LinkedIn Learning' },
             ].map(c => (
               <div key={c.name} className="cert-card">
                 <div className="cert-icon">{c.icon}</div>
