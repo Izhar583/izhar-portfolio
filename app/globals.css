@@ -122,10 +122,10 @@ section { position: relative; z-index: 1; padding: 7rem 3rem; }
 .project-card:hover { border-color: var(--cyan); transform: translateY(-6px); box-shadow: var(--glow-cyan); }
 .project-img { height: 160px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; perspective: 1000px; }
 .project-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 40%, rgba(14,14,28,0.9)); pointer-events: none; }
-.icon-3d-wrap { width: 72px; height: 72px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2); border-radius: 18px; display: flex; align-items: center; justify-content: center; box-shadow: -4px 6px 0px rgba(0,238,255,0.3), -8px 12px 20px rgba(0,0,0,0.6); transform: rotateX(20deg) rotateY(-20deg); transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.project-card:hover .icon-3d-wrap { transform: rotateX(0) rotateY(0) translateZ(40px) scale(1.15); box-shadow: 0 15px 30px rgba(0,238,255,0.4); background: rgba(255,255,255,0.1); }
-.icon-3d-wrap svg { width: 36px; height: 36px; stroke: #fff; filter: drop-shadow(0 0 10px rgba(255,255,255,0.5)); transition: all 0.4s ease; }
-.project-card:hover .icon-3d-wrap svg { filter: drop-shadow(0 0 20px rgba(0,238,255,0.8)); stroke: var(--cyan); }
+.icon-3d-wrap { width: 80px; height: 80px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3); border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: -6px 10px 0px rgba(0,238,255,0.4), -12px 20px 30px rgba(0,0,0,0.7); transform: rotateX(25deg) rotateY(-25deg) translateZ(10px); transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); z-index: 5; position: relative; }
+.project-card:hover .icon-3d-wrap { transform: rotateX(0) rotateY(0) translateZ(50px) scale(1.2); box-shadow: 0 20px 40px rgba(0,238,255,0.5); background: rgba(255,255,255,0.2); }
+.icon-3d-wrap svg { width: 42px; height: 42px; stroke: #fff; filter: drop-shadow(0 0 15px rgba(255,255,255,0.6)); transition: all 0.4s ease; }
+.project-card:hover .icon-3d-wrap svg { filter: drop-shadow(0 0 25px rgba(0,238,255,0.9)); stroke: var(--cyan); }
 .p1 { background: linear-gradient(135deg, #0a2a1a, #0f3d2a); }
 .p2 { background: linear-gradient(135deg, #1a1a2e, #16213e); }
 .p3 { background: linear-gradient(135deg, #2a0a1a, #3d0f28); }
