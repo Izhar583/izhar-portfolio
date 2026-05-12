@@ -242,7 +242,7 @@ export default function Home() {
               <a href="mailto:izharjoiya0@gmail.com" className="contact-pill"><span className="contact-pill-icon">📧</span> izharjoiya0@gmail.com</a>
               <a href="tel:+923167097583" className="contact-pill"><span className="contact-pill-icon">📱</span> +92 316 7097583</a>
               <a href="#" className="contact-pill"><span className="contact-pill-icon">📍</span> Lahore, Pakistan</a>
-              <a href="https://linkedin.com/in/izhar-ulhaq" className="contact-pill"><span className="contact-pill-icon">🔗</span> linkedin.com/in/izhar-ulhaq</a>
+              <a href="https://www.linkedin.com/in/izhar-ul-haq-01b2ab2b3/" className="contact-pill"><span className="contact-pill-icon">🔗</span> linkedin.com/in/izhar-ulhaq</a>
             </div>
             <form className="contact-form" action="mailto:izharjoiya0@gmail.com" method="post">
               <input type="text" placeholder="Your Name" className="form-input" required />
@@ -256,7 +256,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer>
-        <span className="footer-text">© 2025 Izhar Ul Haq</span>
+        <span className="footer-text">© 2026 Izhar Ul Haq</span>
         <span className="footer-built">Designed &amp; Built by <span>Izhar Ul Haq</span> · Lahore 🇵🇰</span>
         <span className="footer-text">izharjoiya0@gmail.com</span>
       </footer>
